@@ -1,7 +1,7 @@
 - name:             Ethereum Deposit Wallet
   blockchain_key:   eth-rinkeby
   currency_id:      eth
-  address:          '0x2b9fBC10EbAeEc28a8Fc10069C0BC29E45eBEB9C'
+  address:          '0x7CD383AAF392147b79dB633DC16642B720A173d0'
   kind:             deposit
   nsig:             1
   max_balance:      0.0
@@ -14,7 +14,7 @@
 - name:             Ethereum Hot Wallet
   blockchain_key:   eth-rinkeby
   currency_id:      eth
-  address:          '0x0f493226a8a98363e9a85e6b8eca468a18cc6fbb'
+  address:          '0x7CD383AAF392147b79dB633DC16642B720A173d0'
   kind:             hot
   nsig:             1
   max_balance:      100.0
@@ -27,7 +27,7 @@
 - name:             Trust Deposit Wallet
   blockchain_key:   eth-rinkeby
   currency_id:      trst
-  address:          '0x2b9fBC10EbAeEc28a8Fc10069C0BC29E45eBEB9C'
+  address:          '0x7CD383AAF392147b79dB633DC16642B720A173d0'
   kind:             deposit
   nsig:             1
   max_balance:      0.0
@@ -40,7 +40,7 @@
 - name:             Trust Hot Wallet
   blockchain_key:   eth-rinkeby
   currency_id:      trst
-  address:          '0x0f493226a8a98363e9a85e6b8eca468a18cc6fbb'
+  address:          '0x7CD383AAF392147b79dB633DC16642B720A173d0'
   kind:             hot
   nsig:             1
   max_balance:      100.0
