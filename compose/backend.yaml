@@ -26,12 +26,12 @@ services:
     environment:
       PMA_HOST: db
       PMA_USER: root
-      PMA_PASSWORD: durheim
+      PMA_PASSWORD: changeme
       PHP_UPLOAD_MAX_FILESIZE: 1G
       PHP_MAX_INPUT_VARS: 1G
     labels:
       traefik.enable: true
-      traefik.frontend.rule: 'Host: pma.wb.bicoti.com'
+      traefik.frontend.rule: 'Host: pma.geekmex.com'
       traefik.port: 80
 
   rabbitmq:
@@ -41,7 +41,7 @@ services:
       - rabbitmq_data:/var/lib/rabbitmq
     labels:
       traefik.enable: true
-      traefik.frontend.rule: 'Host: rabbitmq.wb.bicoti.com'
+      traefik.frontend.rule: 'Host: rabbitmq.geekmex.com'
       traefik.port: 15672
 
   vault:
@@ -62,7 +62,7 @@ services:
       - ../config/ranger.env
     labels:
       traefik.enable: true
-      traefik.frontend.rule: 'Host: ws.ranger.wb.bicoti.com'
+      traefik.frontend.rule: 'Host: ws.ranger.wb.geekmex.com'
       traefik.port: 8080
     command: bash -c "bundle exec peatio service start ranger"
 
@@ -70,7 +70,7 @@ services:
     image: schickling/mailcatcher
     labels:
       traefik.enable: true
-      traefik.frontend.rule: 'Host: mail.wb.bicoti.com'
+      traefik.frontend.rule: 'Host: mail.geekmex.com'
       traefik.port: 1080
 
 volumes:
