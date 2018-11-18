@@ -7,7 +7,7 @@ services:
       - ../config/mysql/my.cnf:/etc/mysql/my.cnf
       - db_data:/var/lib/mysql
     environment:
-      MYSQL_ROOT_PASSWORD: durheim
+      MYSQL_ROOT_PASSWORD: changeme
 
   coinhub:
     image: rubykube/coinhub
