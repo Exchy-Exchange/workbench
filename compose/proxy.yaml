@@ -13,13 +13,13 @@ services:
     networks:
       default:
         aliases:
-          - api.wb.local
-          - auth.wb.local
-          - ws.ranger.wb.local
-          - pma.wb.local
-          - eth.wb.local
-          - monitor.wb.local
+          - api.wb.bicoti.com
+          - auth.wb.bicoti.com
+          - ws.ranger.wb.bicoti.com
+          - pma.wb.bicoti.com
+          - eth.wb.bicoti.com
+          - monitor.wb.bicoti.com
     labels:
       traefik.enable: true
-      traefik.frontend.rule: 'Host: monitor.wb.local'
+      traefik.frontend.rule: 'Host: monitor.wb.bicoti.com'
       traefik.port: 8080
