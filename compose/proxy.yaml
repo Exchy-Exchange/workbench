@@ -13,13 +13,13 @@ services:
     networks:
       default:
         aliases:
-          - api.wb.bicoti.com
-          - auth.wb.bicoti.com
-          - ws.ranger.wb.bicoti.com
-          - pma.wb.bicoti.com
-          - eth.wb.bicoti.com
-          - monitor.wb.bicoti.com
+          - api.geekmex.com
+          - auth.geekmex.com
+          - ws.ranger.geekmex.com
+          - pma.geekmex.com
+          - eth.geekmex.com
+          - monitor.geekmex.com
     labels:
       traefik.enable: true
-      traefik.frontend.rule: 'Host: monitor.wb.bicoti.com'
+      traefik.frontend.rule: 'Host: monitor.geekmex.com'
       traefik.port: 8080
